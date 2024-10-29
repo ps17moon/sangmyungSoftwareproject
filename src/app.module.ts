@@ -5,9 +5,10 @@ import { VidioModule } from './vidio.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ConfigModule } from '@nestjs/config';
 import * as mongoose from 'mongoose'
+import { MemberModule } from './member.module';
 
 @Module({
-  imports: [VidioModule, MongooseModule.forRoot('mongodb://localhost/nest')],
+  imports: [VidioModule, MemberModule, MongooseModule.forRoot('mongodb://localhost/nest')],
   controllers: [AppController],
   providers: [AppService],
 
