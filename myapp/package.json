@@ -1,0 +1,14 @@
+{
+  "name": "sangmyung_azure_face_api",
+  "version": "1.0.0",
+  "description": "sangmyung-swdesign-ms-azure-face-api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@azure-rest/ai-vision-face": "^1.0.0-beta.2"
+  }
+}
