@@ -26,4 +26,10 @@ export class FaceController {
     const result = await this.faceService.identifyFace(body.personGroupId, body.faceIds);
     return result;
   }
+
+  @Post('/process-images')
+  async processCapturedImages(@Body() body: { personGroupId: string }) {
+    await this.faceService.processCapturedImages(body.personGroupId);
+    return { message: 'Image processing complete' };
+  }
 }

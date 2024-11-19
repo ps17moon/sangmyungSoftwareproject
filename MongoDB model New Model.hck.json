@@ -148,7 +148,56 @@
                 "collation": "null"
             },
             "GUID": "a12c5f62-c843-48f1-abe6-4751cd5f8456"
+        },
+        {
+            "collectionName": "detectedPerson",
+            "type": "object",
+            "properties": [
+                {
+                    "name": "faceId",
+                    "type": "string",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "unique-guid-1",
+                    "error": {}
+                },
+                {
+                    "name": "group",
+                    "type": "string",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "unique-guid-2",
+                    "error": {}
+                },
+                {
+                    "name": "detectedAt",
+                    "type": "date",
+                    "isActivated": true,
+                    "primaryKey": false,
+                    "GUID": "unique-guid-3",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "properties": [],
+                "GUID": "unique-guid-4"
+            },
+            "isActivated": true,
+            "additionalProperties": false,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "unique-guid-5"
         }
+        
     ],
     "buckets": [],
     "views": [],
